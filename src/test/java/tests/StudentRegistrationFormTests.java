@@ -20,6 +20,7 @@ public class StudentRegistrationFormTests {
     @Test
     void successfulFillFormTest() {
         String firstName = "Robert",
+                middleName = "Test",
                 lastName = "Kovalauskis",
                 email = "robert.automation@gmail.com",
                 gender = "Male",
