@@ -19,10 +19,10 @@ public class StudentRegistrationFormTests {
 
     @Test
     void successfulFillFormTest() {
-        String firstName = "Alex",
-                lastName = "Alexov",
-                email = "aa@aa.com",
-                gender = "Other",
+        String firstName = "Robert",
+                lastName = "Kovalauskis",
+                email = "robert.automation@gmail.com",
+                gender = "Male",
                 mobile = "1234567890",
                 dayOfBirth = "10",
                 monthOfBirth = "May",
@@ -48,7 +48,7 @@ public class StudentRegistrationFormTests {
         $("#genterWrapper").$(byText(gender)).click();
         $("#userNumber").val(mobile);
         // set date
-        $("#dateOfBirthInput").click();
+        $("#dateOfBirthInput").scrollTo().click();
         $(".react-datepicker__month-select").selectOption(monthOfBirth);
         $(".react-datepicker__year-select").selectOption(yearOfBirth);
         $(".react-datepicker__day--0" + dayOfBirth).click();
